@@ -411,6 +411,12 @@ h6 {
   position: relative;
 }
 
+#hero #typed {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.439);
@@ -429,7 +435,6 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 56px;
   font-weight: 700;
   line-height: 64px;
   color: #fff;
@@ -440,10 +445,33 @@ h6 {
   color: #4b741b;
 }
 
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+          font-size: 40px;
+          font-weight: 300;
+}
+
+.tracking-in-expand-fwd-first {
+	-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+          font-size: 70px;
+          font-weight: 700;
+}
+
 #hero h2 {
   color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
-  font-size: 24px;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.scale-in-top {
+	-webkit-animation: scale-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: scale-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+          font-size: 70px;
+          font-weight: 700;
 }
 
 #hero .icon-box {

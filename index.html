@@ -30,6 +30,44 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+  
+ @-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+  </style>
+
 </head>
 
 <body>
@@ -78,14 +116,15 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+    <div class="container">
+      <div class="row justify-content-center" >
         <div class="col-xl-6 col-lg-8">
-          <h1>SignWorks Creative Media<span>.</span></h1>
-          <h2>We are team of talented programmers,digital marketers and graphic designers.</h2>
-        </div>
+          <h1 class="tracking-in-expand-fwd-first">SignWorks</h1>
+          <h1 class="tracking-in-expand-fwd">Creative Media <span>.</span> </h1>
+          <h2><span id="typed"></span></h2>
       </div>
+    </div>
+    <div class="container" data-aos="fade-up">
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         <div class="col-xl-2 col-md-4">
@@ -134,13 +173,13 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>A Creative Media Agency that builds and transforms businesses using advance technologies, data and AI</h3>
+            <h3>Who are we?</h3>
             <p class="fst-italic">
-              We enable some of the most demanding organizations to enrich customer experiences, optimize operations, launch new platforms, and monetize data opportunities. We offer fully-managed and end-to-end strategy, tech, tools and talent as a single platform to deliver on mission-critical technology initiatives. We’re known for our speed, reliability, quality, and unbeatable ROI..
+              We are a team of talented programmers, digital marketers and web designers with expertise in media management and creative design based in morocco.As a leading digital Media agency we enable enterprises and SMB to enrich customer experiences, optimize operations, launch new platforms, and monetize data opportunities .
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i>We Serve our customers with the right IT infrastructure, hardware, software and applications.</li>
-              <li><i class="ri-check-double-line"></i> We provide customers with unique value to help their businesses to stand out from their competitors.</li>
+              <li><i class="ri-check-double-line"></i>We present extensive analytical and strategic methodologies to provide a strong foundation to build a unique brand experience that will drive results for your business.</li>
+              <li><i class="ri-check-double-line"></i> We craft eye-catching designs across all mediums that engage, excite and ensure your brand’s message is communicated with a single glance.</li>
               <li><i class="ri-check-double-line"></i> We make sure our employees are empowered to make decisions and take ownership of their work.</li>
             </ul>
             <p>
@@ -349,7 +388,7 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Check some projects we accomplished :</p>
+          <p>See Our Work :</p>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -697,7 +736,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Contact Us</p>
+          <p>We love talking about brands. Wanna talk about yours?</p>
         </div>
 
         <div>
@@ -853,6 +892,18 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+    strings: ['We change   businesses into brands you love'],
+    typeSpeed: 75,
+    backSpeed: 100,
+    startDelay: 3000,
+    loop: false,
+    showCursor: false,
+  });
+  </script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
