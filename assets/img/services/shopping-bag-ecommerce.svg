@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="121" viewBox="0 0 113 121">
+    <defs>
+        <circle id="a" cx="77.647" cy="28.235" r="4.235"/>
+        <circle id="b" cx="35.294" cy="28.235" r="4.235"/>
+        <circle id="c" cx="4.941" cy="39.529" r="4.235"/>
+        <circle id="d" cx="4.941" cy="115.059" r="4.235"/>
+        <circle id="e" cx="107.294" cy="39.529" r="4.235"/>
+        <circle id="f" cx="107.294" cy="115.059" r="4.235"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#666" stroke-linecap="round" stroke-linejoin="round" d="M4.615 116.107H107.62v-76.3H4.615zM35.294 27.824v-6.706C35.294 10.008 44.776 1 56.471 1c11.698 0 21.176 9.008 21.176 20.118v6.706"/>
+        <g transform="rotate(-90 78.147 28.735)">
+            <use fill="#DDD" xlink:href="#a"/>
+            <circle cx="77.647" cy="28.235" r="3.485" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#a"/>
+        </g>
+        <g transform="rotate(-90 35.794 28.735)">
+            <use fill="#DDD" xlink:href="#b"/>
+            <circle cx="35.294" cy="28.235" r="3.485" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#b"/>
+        </g>
+        <g transform="rotate(-90 5.441 40.03)">
+            <use fill="#DDD" xlink:href="#c"/>
+            <circle cx="4.941" cy="39.529" r="3.485" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#c"/>
+        </g>
+        <g transform="rotate(-90 5.441 115.559)">
+            <use fill="#DDD" xlink:href="#d"/>
+            <circle cx="4.941" cy="115.059" r="3.485" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#d"/>
+        </g>
+        <g transform="rotate(-90 107.794 40.03)">
+            <use fill="#DDD" xlink:href="#e"/>
+            <circle cx="107.294" cy="39.529" r="3.485" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#e"/>
+        </g>
+        <g transform="rotate(-90 107.794 115.559)">
+            <use fill="#DDD" xlink:href="#f"/>
+            <circle cx="107.294" cy="115.059" r="3.485" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#f"/>
+        </g>
+    </g>
+</svg>

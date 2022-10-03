@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="122" viewBox="0 0 118 122">
+    <defs>
+        <circle id="a" cx="48.511" cy="60" r="3.83"/>
+        <circle id="b" cx="80.426" cy="43.404" r="3.83"/>
+        <circle id="c" cx="80.426" cy="76.596" r="3.83"/>
+        <circle id="d" cx="88.085" cy="31.915" r="3.83"/>
+        <circle id="e" cx="88.085" cy="88.085" r="3.83"/>
+        <circle id="f" cx="35.745" cy="60" r="3.83"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <path stroke="#666" stroke-linecap="round" stroke-linejoin="round" d="M68.91 26.809l22.617 33.166L68.911 93.14 46.686 59.975z"/>
+        <circle cx="17.872" cy="60" r="17.872" stroke="#666" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="98.298" cy="17.872" r="17.872" stroke="#666" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="98.298" cy="102.128" r="17.872" stroke="#666" stroke-linecap="round" stroke-linejoin="round"/>
+        <path stroke="#666" stroke-linecap="round" stroke-linejoin="round" d="M46.596 60H36.363M87.447 32.553l-7.021 10.431M87.447 87.447l-7.021-10.431"/>
+        <g>
+            <use fill="#DDD" xlink:href="#a"/>
+            <circle cx="48.511" cy="60" r="3.08" stroke="#151515" stroke-width="1.5"/>
+            <use stroke="#151515" xlink:href="#a"/>
+        </g>
+        <g>
+            <use fill="#DDD" xlink:href="#b"/>
+            <circle cx="80.426" cy="43.404" r="3.08" stroke="#151515" stroke-width="1.5"/>
+            <use stroke="#151515" xlink:href="#b"/>
+        </g>
+        <g>
+            <use fill="#DDD" xlink:href="#c"/>
+            <circle cx="80.426" cy="76.596" r="3.08" stroke="#151515" stroke-width="1.5"/>
+            <use stroke="#151515" xlink:href="#c"/>
+        </g>
+        <g>
+            <use fill="#DDD" xlink:href="#d"/>
+            <circle cx="88.085" cy="31.915" r="3.08" stroke="#151515" stroke-width="1.5"/>
+            <use stroke="#151515" xlink:href="#d"/>
+        </g>
+        <g>
+            <use fill="#DDD" xlink:href="#e"/>
+            <circle cx="88.085" cy="88.085" r="3.08" stroke="#151515" stroke-width="1.5"/>
+            <use stroke="#151515" xlink:href="#e"/>
+        </g>
+        <g>
+            <use fill="#DDD" xlink:href="#f"/>
+            <circle cx="35.745" cy="60" r="3.08" stroke="#151515" stroke-width="1.5"/>
+            <use stroke="#151515" xlink:href="#f"/>
+        </g>
+    </g>
+</svg>

@@ -27,7 +27,7 @@ h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
   right: 15px;
   bottom: 15px;
@@ -431,6 +431,7 @@ h6 {
   position: relative;
   padding-top: 74px;
   text-align: center;
+  
 }
 
 #hero h1 {
@@ -596,7 +597,7 @@ section {
   position: relative;
 }
 
-.about .content ul i {
+.about .content ul i{
   position: absolute;
   font-size: 20px;
   left: 0;
@@ -1048,6 +1049,136 @@ section {
     max-width: 100%;
   }
 }
+
+/*--------------------------------------------------
+services
+---------------------------------------------------    */
+.headser {
+  background-color: #000000 !important;
+}
+.contain .row {
+  align-content: flex-start !important;
+
+}
+.service-nav-sticky-wrapper {
+  z-index: 1000;
+  margin: 0;
+  padding: 0; }
+
+.ctn-right a:hover {
+  color: #5e961f;
+  }
+
+#service-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 100px 300px 0 300px;
+  height: 100vh;
+  background: url(../img/banner-services1.png) bottom  right;
+
+  }
+  
+  #service-nav p {
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 2.33;
+    color: #000000;
+    font-family: 'Roboto-Bold', sans-serif;
+    align-items: center;
+    margin-right: 34px;
+    text-align: center; }
+  #service-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 28px;
+    border: solid 4px #4b741b;
+    padding: 4px;
+    list-style: none;
+    justify-content: space-evenly;
+    background: #fff7f78a;
+  }
+    @media (max-width: 767px) {
+      #service-nav ul li {
+        width: 100%; } }
+    #service-nav ul li a {
+      font-size: 20px;
+      line-height: 1.4;
+      color: black;
+      border-radius: 2rem;
+      padding: 5px; }
+    #service-nav ul li:hover a {
+      background-color: #5e961f;
+      
+       }
+
+#services-details {
+  padding: 0 0 !important;
+}
+  #services-details .service-section {
+    padding: 15px;
+    z-index: 9; }
+    #services-details .service-section:nth-of-type(1) {
+      margin-top: 4rem; }
+    #services-details .service-section:nth-of-type(2) .sub-title {
+      margin-bottom: 1.5rem; }
+    @media (max-width: 991px) {
+      #services-details .service-section > .col-xs-12:nth-child(1) img {
+        border: 1px solid #4b741b;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        margin-bottom: 1rem; } }
+  #services-details h2.title {
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center; }
+  #services-details .sub-title {
+    color: #4b741b;
+    margin-bottom: 4rem;
+    text-align: center; }
+  #services-details .items .item.no-margin {
+    margin-top: 0; }
+  #services-details .items .item h5 {
+    font-family: 'Barlow-Regular', sans-serif;
+    color: #4b741b;
+    margin-bottom: 1.5rem; }
+  #services-details .items .item .sub {
+    color: black;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold; }
+  #services-details .items .item ul {
+    padding-left: 35px; }
+    #services-details .items .item ul li {
+      line-height: 1.5;
+      font-size: 16px;
+      color: #999999;
+      list-style-image: url(../svg/check.svg);
+      padding-left: .5rem;
+      margin-bottom: 1rem; }
+  #services-details .ready-to-work h3 {
+    color: #4b741b; }
+    #services-details .ready-to-work h3 a {
+      text-decoration: underline; }
+
+      #services-details .contain {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+    
+      }
+      
+     .snap {
+        width: 100%;
+        height: 100vh;
+        background-size:  cover;
+        scroll-snap-align: start;
+    }
 
 /*--------------------------------------------------------------
 # Testimonials

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <circle id="a" cx="40.777" cy="114.175" r="3.495"/>
+        <circle id="b" cx="3.495" cy="78.058" r="3.495"/>
+        <circle id="c" cx="79.223" cy="87.379" r="3.495"/>
+        <circle id="d" cx="94.369" cy="23.301" r="3.495"/>
+        <circle id="e" cx="32.621" cy="39.612" r="3.495"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#666" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M47.377 76.432L25.03 54.122 4.495 58.6 42.13 95.716z"/>
+            <path d="M94.947 3.786L32.913 20.723l-7.888 33.372 22.297 22.298 33.372-7.888zM61.253 38.23L96.03 3.456"/>
+            <path d="M61.478 50.798c3.41-3.41 3.41-8.947 0-12.357a8.738 8.738 0 1 0 0 12.357z"/>
+        </g>
+        <g transform="rotate(-90 31.777 104.175)">
+            <use fill="#DDD" xlink:href="#a"/>
+            <circle cx="40.777" cy="114.175" r="2.745" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#a"/>
+        </g>
+        <g transform="rotate(-90 -5.505 68.058)">
+            <use fill="#DDD" xlink:href="#b"/>
+            <circle cx="3.495" cy="78.058" r="2.745" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#b"/>
+        </g>
+        <g transform="rotate(-90 70.223 77.379)">
+            <use fill="#DDD" xlink:href="#c"/>
+            <circle cx="79.223" cy="87.379" r="2.745" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#c"/>
+        </g>
+        <g transform="rotate(-90 85.369 13.301)">
+            <use fill="#DDD" xlink:href="#d"/>
+            <circle cx="94.369" cy="23.301" r="2.745" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#d"/>
+        </g>
+        <g transform="rotate(-90 23.621 29.612)">
+            <use fill="#DDD" xlink:href="#e"/>
+            <circle cx="32.621" cy="39.612" r="2.745" stroke="#333" stroke-width="1.5"/>
+            <use stroke="#333" xlink:href="#e"/>
+        </g>
+    </g>
+</svg>

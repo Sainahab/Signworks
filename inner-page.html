@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Gp Bootstrap Template</title>
+  <title>SignWorks - Creative Media </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,32 +30,64 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Gp - v4.9.0
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+  
+ @-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+  </style>
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!--<h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
+       Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo_dark.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -69,7 +103,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -81,29 +115,92 @@
   </header><!-- End Header -->
 
   <main id="main">
+    <!-- Section: Services Details -->
+    <section id="services-details">
+      <div class="contain">
+        <div class="row">
+          <!-- services details start -->
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="service-nav" class="row">
+              <p>Our Services</p>
+              <ul>
+                <li class="nav-item active"><a id="link-consultancy" class="nav-link js-scroll-trigger" href="services.html#consultancy">Consultancy</a></li>
+                <li class="nav-item"><a id="link-web-design" class="nav-link js-scroll-trigger" href="services.html#web-design">Web Development</a></li>
+                <li class="nav-item active"><a id="link-Graphic-Design" class="nav-link js-scroll-trigger" href="services.html#Graphic-Design">Graphic Design</a></li>
+                <li class="nav-item active"><a id="link-Content-Writing" class="nav-link js-scroll-trigger" href="services.html#Content-Writing">Content Writing</a></li>
+                <li class="nav-item active"><a id="link-Data-Analysis" class="nav-link js-scroll-trigger" href="services.html#Data-Analysis">Data Analysis</a></li>
+                <li class="nav-item active"><a id="link-IT-Services" class="nav-link js-scroll-trigger" href="services.html#IT-Services">IT Services</a></li>
+                <li class="nav-item active"><a id="link-Software-Testing" class="nav-link js-scroll-trigger" href="services.html#Software-Testing">Software Testing</a></li>
+                <li class="nav-item active"><a id="link-Marketing" class="nav-link js-scroll-trigger" href="services.html#Marketing">Marketing</a></li>
+                <li class="nav-item"><a id="link-cybersecurity" class="nav-link js-scroll-trigger" href="services.html#cybersecurity">Cybersecurity</a></li>
+              </ul>
+            </div>
+          </div> <!-- End #col -->
+        </div> <!-- End #row -->
+        
+        <div class="row">
+          <!-- services details start -->
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <!-- Subsection: Consultancy -->
+            <div id="consultancy" class="row service-section " >
+              <h2 class="title">Consultancy</h2>
+              <h6 class="sub-title">Our diverse team and experience can help accelerate change in a number of areas in your organisation.</h6>
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" >
+              <img src="assets/img/cons.jpg" alt="icon" class="img-fluid">
+            </div>
+            <div class="col-sm-10 col-xs-12 col-md-12 col-lg-8 col-xl-8"  >
+              <div class="row items">
+                <div class="col-md-12 item no-margin">
+                  <h5>Digital Strategy</h5>
+                  <p class="sub">Technology driving opportunity, innovation and growth</p>
+                  <p>Apply a digital focus to the opportunities created by emerging technologies: devices, platforms, distribution models, and social media.</p>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12 col-lg-6 col-xl-6">
+                      <ul>
+                        <li>Technical landscape analysis</li>
+                        <li>Insight into emerging technologies</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 col-lg-6 col-xl-6">
+                      <ul>
+                        <li>Vertical applications of new technologies</li>
+                        <li>Specific implementations of apps and websites</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
-          </ol>
+              <div class="row items">
+                <div class="col-md-6 item">
+                  <h5>Hi-Tech Innovation</h5>
+                  <p>Identify new, higher growth products and services and create virtual start-ups for rapid development and launch.</p>
+                  <ul>
+                    <li>Cross-platform capabilities</li>
+                    <li>Access to talented professionals in multiple fields</li>
+                    <li>Technical insight backed by business strengths</li>
+                    <li>Experience in all aspects of technology development</li>
+                  </ul>
+                </div>
+                <div class="col-md-6 item">
+                  <h5>Growth Opportunities</h5>
+                  <p>Align business, creative, marketing, and technology talent to exploit growth opportunities while maximizing performance of core businesses.</p>
+                  <ul>
+                    <li>Organisational analysis and patterning</li>
+                    <li>Driving internal disruption and change</li>
+                    <li>Adopting new technologies for competitive advantage</li>
+                    <li>Building process that can scale as you grow</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
+      </div> <!-- End #contain -->
 
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
-      </div>
-    </section>
+    </section><!-- End #section -->
 
   </main><!-- End #main -->
 
@@ -115,12 +212,13 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Gp<span>.</span></h3>
+              <h3>SIGNWORKS S.A.R.L<span>.</span></h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                7 STREET MOUSSA BEN NOUSSAIR،<br>
+                2ND FLOOR, OFFICES Nº3<br>
+                90020, TANGER, MOROCCO.<br><br>
+                <strong>Phone:</strong> +212(0)531073046<br>
+                <strong>Email:</strong> info@signworks.ma<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -169,14 +267,15 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>2022</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Made with <i class="bi-heart-fill"></i>
+        by <a href="https://SignWorks.ma/" >SIGNWORKS S.A.R.L</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -192,6 +291,18 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+    strings: ['We change   businesses into brands you love'],
+    typeSpeed: 75,
+    backSpeed: 100,
+    startDelay: 3000,
+    loop: false,
+    showCursor: false,
+  });
+  </script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
