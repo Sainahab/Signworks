@@ -509,8 +509,8 @@ h6 {
 
 #hero .icon-box:hover {
   border-color: #4b741b;
-  background-color: #5ac343;
-  box-shadow: white 0px 4px 16px, white 0px 8px 24px, white 0px 16px 56px;
+    background-color: #b8b8b8b0;
+    box-shadow: #ffffffab 0px 4px 16px, #ffffff00 0px 8px 24px, white 0px 16px 56px;
 }
 
 @media (min-width: 1024px) {
@@ -745,7 +745,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/146.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tng.jpeg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1025,7 +1025,7 @@ section {
 }
 
 .counts .image {
-  background: url("../img/3rd.jpg") center center no-repeat;
+  background: url("../img/count.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -1159,6 +1159,10 @@ services
     #services-details .ready-to-work h3 a {
       text-decoration: underline; }
 
+      .ready-to-work {
+        padding-bottom: 5rem;
+      }
+
       #services-details .contain {
         position: relative;
         width: 100%;
@@ -1195,7 +1199,7 @@ services
 
 .testimonials {
   padding: 80px 0;
-  background: url("../img/test1.jpg") no-repeat;
+  background: url("../img/cons.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1343,6 +1347,9 @@ services
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+.team .row {
+  justify-content: space-evenly;
 }
 
 .team .member .social a:hover {
@@ -1742,7 +1749,12 @@ services
   font-size: 13px;
   color: #fff;
 }
-
+#footer .snap {
+  width: 105% !important;
+}
+#footer .row{
+  --bs-gutter-x: 2.5rem !important;
+}
 /* CSS */
 .button-3 {
   appearance: none;
@@ -1793,4 +1805,11 @@ services
 .button-3:active {
   background-color: #298e46;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.ready-to-work .button-3 {
+  transform: scale(1.5) !important;
+    padding: 0.5rem 10rem;
+  margin-top: 2rem;
+  background-color: #3b3b3b;
 }
