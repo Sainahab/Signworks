@@ -77,9 +77,7 @@ h6 {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid #4b741b;
-  border-top-color: #151515;
-  border-bottom-color: #151515;
+  background: url("../img/preload.png") no-repeat;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1049,6 +1047,7 @@ section {
 /*--------------------------------------------------
 services
 ---------------------------------------------------    */
+
 .headser {
   background-color: #000000 !important;
 }
@@ -1108,62 +1107,66 @@ services
       
        }
 
-#services-details {
+.modaal-wrapper {
   padding: 0 0 !important;
 }
-  #services-details .service-section {
+.modaal-wrapper .row {
+  justify-content: space-around;
+}
+  .modaal-wrapper .service-section {
     padding: 15px;
     z-index: 9; }
-    #services-details .service-section:nth-of-type(1) {
-      margin-top: 4rem; }
-    #services-details .service-section:nth-of-type(2) .sub-title {
+    .modaal-wrapper .service-section:nth-of-type(2) .sub-title {
       margin-bottom: 1.5rem; }
     @media (max-width: 991px) {
-      #services-details .service-section > .col-xs-12:nth-child(1) img {
+      .modaal-wrapper .service-section > .col-xs-12:nth-child(1) img {
         border: 1px solid #4b741b;
         background-color: rgba(255, 255, 255, 0.05);
         padding: 2rem;
         margin-bottom: 1rem; } }
-  #services-details h2.title {
+  .modaal-wrapper h2.title {
     color: black;
     font-weight: 700;
     font-size: 35px;
-    text-align: center; }
-  #services-details .sub-title {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .modaal-wrapper .sub-title {
     color: #4b741b;
     margin-bottom: 4rem;
     text-align: center; }
-  #services-details .items .item.no-margin {
+  .modaal-wrapper .items .item.no-margin {
     margin-top: 0; }
-  #services-details .items .item h5 {
+  .modaal-wrapper .items .item h5 {
     font-family: 'Barlow-Regular', sans-serif;
     color: #4b741b;
-    margin-bottom: 1.5rem; }
-  #services-details .items .item .sub {
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+    font-weight: bolder; }
+  .modaal-wrapper .items .item .sub {
     color: black;
     font-family: 'Roboto-Bold', sans-serif;
     font-size: 20px;
     line-height: 1.4;
     font-weight: bold; }
-  #services-details .items .item ul {
+  .modaal-wrapper .items .item ul {
     padding-left: 35px; }
-    #services-details .items .item ul li {
+    .modaal-wrapper .items .item ul li {
       line-height: 1.5;
       font-size: 16px;
       color: #999999;
       list-style-image: url(../svg/check.svg);
       padding-left: .5rem;
       margin-bottom: 1rem; }
-  #services-details .ready-to-work h3 {
+  .modaal-wrapper .ready-to-work h3 {
     color: #4b741b; }
-    #services-details .ready-to-work h3 a {
+    .modaal-wrapper .ready-to-work h3 a {
       text-decoration: underline; }
 
       .ready-to-work {
         padding-bottom: 5rem;
       }
 
-      #services-details .contain {
+      .modaal-wrapper .contain {
         position: relative;
         width: 100%;
         height: 100vh;
@@ -1752,9 +1755,7 @@ services
 #footer .snap {
   width: 105% !important;
 }
-#footer .row{
-  --bs-gutter-x: 2.5rem !important;
-}
+
 /* CSS */
 .button-3 {
   appearance: none;
