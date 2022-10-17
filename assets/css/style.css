@@ -1814,3 +1814,17 @@ services
   margin-top: 2rem;
   background-color: #3b3b3b;
 }
+
+/*====================  privacy policy =============================*/
+.para {
+  padding: 50px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.para h4,
+.para h3,
+.para h5 {
+  font-weight: bolder;
+}
