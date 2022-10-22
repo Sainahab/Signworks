@@ -1,41 +1,45 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+/* Configuration */
+$subject = 'Website Submission received'; // Set email subject line here
+$mailto  = 'info@signworks.ma'; // Email address to send form submission to
+/* END Configuration */
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+$name      = $_POST['name'];
+$email          = $_POST['email'];
+$clientMessage          = $_POST['message'];
+$timestamp = date("F jS Y, h:iA.", time());
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+// HTML for email to send submission details
+$body = "
+<br>
+<p>The following information was submitted through the contact form on your website:</p>
+<p><b>Name</b>: $name<br>
+<b>Email</b>: $email<br>
+<b>Message</b>: $ClientMessage<br>
+<p>This form was submitted on <b>$timestamp</b></p>
+";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+// Success Message
+$success = "
+<div class=\"row-fluid\">
+    <div class=\"span12\">
+        <h3>Submission successful</h3>
+        <p>Thank you for taking the time to contact Pacific One Lending. A representative will be in contact with you shortly. If you need immediate assistance or would like to speak to someone now, please feel free to contact us directly at <strong>(619) 890-3605</strong>.</p>
+    </div>
+</div>
+";
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+$headers = "From: $name <$email> \r\n";
+$headers .= "Reply-To: $email \r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$message = "<html><body>$body</body></html>";
 
-  echo $contact->send();
+if (mail($mailto, $subject, $message, $headers)) {
+    echo "$success"; // success
+} else {
+    echo 'Form submission failed. Please try again...'; // failure
+}
+
 ?>
