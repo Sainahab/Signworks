@@ -872,7 +872,7 @@
                 <h4>Head of Software Development - Zyagnum AG</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Before i sink in to the big sleep i wann to hear the scream of the butterfly.
+                  We have always looked for external resources that matched our core values and with Signworks we finally found a smart and conscientious team. I have personally referred Signworks and highly recommend.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -885,7 +885,7 @@
                 <h4>Executive Accountant</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Who run the world ??
+                  Signworks listened to our needs and made sure we were getting the correct value for the service provided. Their leadership recognized our requirements and their groups efforts materialized. It became a very cohesive relationship.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -930,7 +930,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Wiam Wlad Lhaj</h4>
+                <h4>Wiam Oulad Hadj</h4>
                 <span>Marketing expert</span>
               </div>
             </div>
@@ -1118,7 +1118,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form id="formula" action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contact-form" action="contact.php" method="post" data-toggle="validator" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1138,12 +1138,9 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="captcha">
-                <div class="frc-captcha" data-sitekey="FCMKMPU17FS7EFR3" data-callback="myCallback" data-start="none"></div>
-              </div>  
+              
               <div class="text-center">
-                
-                <button type="submit">Send Message</button>
+                <button id="submit" type="submit">Send Message</button>
               </div>
             </form>
 
@@ -1237,10 +1234,9 @@
   <script src="chest/plugins/glightbox/js/glightbox.min.js"></script>
   <script src="chest/plugins/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="chest/plugins/swiper/swiper-bundle.min.js"></script>
-  <script src="forms/validate.js"></script>
   <script src="chest/js/typed.js"></script>
-  <script type="module" src="chest/js/widget.module.min.js" async defer></script>
-  <script nomodule src="chest/js/widget.min.js"></script>
+  <script src="contact.js"></script>
+  <script src="chest/js/main.js"></script>
   <script>
     var typed = new Typed('#typed', {
     strings: ['We change businesses into brands you love'],
@@ -1253,31 +1249,5 @@
 
     $('.inline').modaal();
   </script>
- 
-  <script src="chest/js/main.js"></script>
-  <script>
-    function myCallback(solution) {
-        console.log("Captcha finished with solution " + solution);
-    }
-  </script>
-  <script>
-    $('#formula').on('submit', function(e) {
-    e.preventDefault(); //Prevents default submit
-    var form = $(this); 
-    var post_url = form.attr('action'); 
-    var post_data = form.serialize(); //Serialized the form data for process.php
-    $.ajax({
-        type: 'POST',
-        url: 'contact.php', // Your form script
-        data: post_data,
-        success: function(msg) {
-            $(form).fadeOut(500, function(){
-                form.html(msg).fadeIn();
-            });
-        }
-    });
-    });
-  </script>
-
 </body>
 </html>
