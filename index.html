@@ -66,6 +66,15 @@
 
 
   </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8WDVLV4K4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8WDVLV4K4X');
+</script>
 
 </head>
 
@@ -930,7 +939,7 @@
               </div>
               <div class="member-info">
                 <h4>Wiam Oulad Hadj</h4>
-                <span>Marketing expert</span>
+                <span>Digital Marketing specialist</span>
               </div>
             </div>
           </div>
@@ -1015,8 +1024,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Mohamed Bouyazem</h4>
-                <span>Graphic designer</span>
+                <h4>Mohamed Bouyezem</h4>
+                <span>Graphic designer - Photographer</span>
               </div>
             </div>
           </div>
@@ -1041,11 +1050,29 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="chest/img/team/oum.png" class="img-fluid" alt="">
+                <img src="chest/img/team/oum.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Oumaima Lemcelek</h4>
-                <span>SQL Database expert</span>
+                <h4>Oumaima Lamcelek</h4>
+                <span>SQL expert</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="chest/img/team/abdo2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://web.facebook.com/profile.php?id=100007096728420" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://github.com/abdoelamranii" target="_blank"><i class="bi bi-github"></i></a>
+                  <a href="https://www.instagram.com/abdoelamranii/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/abdeslam-elamrani-165697210" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>  
+              </div>
+              <div class="member-info">
+                <h4>Abdeslam El Amrani</h4>
+                <span>Back-end Developer</span>
               </div>
             </div>
           </div>
@@ -1080,9 +1107,10 @@
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://maps.google.com/maps?width=100%25&amp;height=220&amp;hl=en&amp;q=7%20Rue%20Moussa%20Ben%20Noussair,%20Tangier+(SIGNWORKS%20S.A.R.L)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"> frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.840784680284!2d-5.811770924247355!3d35.7792871725558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f4fdee5753b%3A0x45f439765e387698!2sSignworks%20%3A%20Creative%20Media!5e0!3m2!1sen!2sma!4v1671465477763!5m2!1sen!2sma"> frameborder="0" allowfullscreen></iframe>
         </div>
 
+        
         <div class="row mt-5">
 
           <div class="col-lg-4">
@@ -1116,27 +1144,26 @@
             <form id="contact-form" action="contact.php" method="post" data-toggle="validator" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Name *" required="required" data-error="Name is required.">
+                  <div class="help-block with-errors"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
+                <input id="form_subject" type="text" name="subjct" class="form-control" placeholder="Please enter your Subject *" required="required" data-error="Subject is required.">
+                <div class="help-block with-errors"></div>
+                </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              
               <div class="text-center">
-                <button id="submit" type="submit">Send Message</button>
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
               </div>
+              <div class="messages"></div>
             </form>
 
           </div>
@@ -1230,6 +1257,8 @@
   <script src="chest/plugins/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="chest/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="chest/js/typed.js"></script>
+  <script src="chest/js/popper.min.js"></script>
+  <script src="chest/js/validator.min.js"></script>
   <script src="contact.js"></script>
   <script src="chest/js/main.js"></script>
   <script>
