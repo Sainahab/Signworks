@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} signworks.ma [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /en-US/$1 [L]
