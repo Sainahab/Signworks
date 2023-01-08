@@ -1,11 +1,68 @@
-/* Blog Page */
+#hero1 {
+    width: 100%;
+    height: 50vh;
+    background: url("../img/count.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
 
-#page-header.blog-header{
-    background-image: url("images/banner/b19.jpg");
-}
+  #hero1 #typed {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+  }
+
+  #hero1:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.439);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero1 .container {
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+    
+  }
+  #hero1 #typed {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  
+  #hero1:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.439);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero1 .container {
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+    
+  }
+  
+  #hero1 h1 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Blog Page */
 
 #blog{
-    padding: 150px 150px 0 150px;
+    padding: 100px 150px 0 150px;
 }
 
 #blog .blog-box{
@@ -27,35 +84,43 @@
     object-fit: cover;
 }
 
-#blog .blog-details{
-    width: 50%;
+.author {
+    margin-top: 20px;
 }
 
 #blog .blog-details a{
     text-decoration: none;
-    font-size: 11px;
-    color: #000;
-    font-weight: 700;
+    font-size: 15px;
+    color: #4b741b;
+    font-weight: bolder;
     position: relative;
     transition: 0.3s;
 }
 
+
 #blog .blog-details a::after{
     content: "";
-    width: 50px;
+    width: 60px;
     height: 1px;
-    background-color: #000;
+    background-color: #4b741b;
     position: absolute;
-    top: 4px;
-    right: -60px;
+    top: 12px;
+    right: -66px;
 }
 
 #blog .blog-details a:hover{
-    color: #088178;
+    color: #385714;
+    font-size: larger;
+    transition: 0.5s ease;
 }
-
-#blog .blog-details a:hover::after{
-    background-color: #088178;
+#blog .blog-details a::after:hover{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #385714;
+    position: absolute;
+    top: 4px;
+    right: -60px;
 }
 
 #blog .blog-box h1{
@@ -64,6 +129,20 @@
     left: 0;
     font-size: 70px;
     font-weight: 700;
-    color: #c9cbce;
+    color: #4b741b;
     z-index: -9;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+  }
+.section-p1 {
+   padding: 40px 80px;
 }
