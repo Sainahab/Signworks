@@ -2274,9 +2274,10 @@ services
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.38);
   transition: 0.5s;
+  margin-top: 3rem;
 }
 
-.card:hover {
+.card:hover, .card:active {
   height: 350px;
   margin-top: 4rem;
 }
@@ -2295,7 +2296,7 @@ services
   transition: 0.5s;
 }
 
-.card:hover .imgBx {
+.card:hover .imgBx, .card:active .imgBx {
   width: 180px;
   height: 220px;
 }
@@ -2319,6 +2320,7 @@ services
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
+  
 }
 
 .card .content .details {
@@ -2341,7 +2343,7 @@ services
   color: white;
 }
 
-.card:hover .content .details {
+.card:hover .content .details, .card:active .content .details {
   transform: translateY(0px);
 }
 
